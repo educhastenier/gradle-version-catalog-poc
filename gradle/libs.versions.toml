@@ -1,0 +1,24 @@
+[versions]
+
+groovyVersion = "3.0.10"
+springVersion = "5.3.27"
+springBootVersion = "2.6.9"
+h2Version = "1.4.199"
+commonsLangVersion = "3.11"
+
+
+[libraries]
+groovyCore = { module = "org.codehaus.groovy:groovy", version.ref = "groovyVersion" }
+groovyServlet = { module = "org.codehaus.groovy:groovy-servlet", version.ref = "groovyVersion" }
+
+srpingBootStarterTest = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "springBootVersion" }
+
+h2 = { module = "com.h2database:h2", version.ref = "h2Version" }
+
+commonsLang = { group = "org.apache.commons", name = "commons-lang3", version.ref = "commonsLangVersion" }
+
+[bundles]
+groovy = ["groovyCore", "groovyServlet"]
+
+[plugins]
+springBoot = { id = "org.springframework.boot", version.ref = "springBootVersion" }

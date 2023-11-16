@@ -1,0 +1,30 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+
+  # Maintain dependencies for gradle
+  - package-ecosystem: "gradle"
+    directory: "/"
+    target-branch: main
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
+  # Maintain dependencies for Github actions
+  - package-ecosystem: "github-actions"
+    # Set the directory to "/" to check for workflow files in .github/workflows
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "05:00"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore"
+      include: "scope"
