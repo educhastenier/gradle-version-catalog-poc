@@ -4,7 +4,7 @@ plugins {
     alias(libs.plugins.springBoot)
     alias(libs.plugins.springDepMgt)
     kotlin("jvm") version "1.9.20"
-    kotlin("plugin.spring") version "1.6.21"
+    kotlin("plugin.spring") version "1.9.20"
 }
 
 group = "com.bonitasoft.watch.gradle"
