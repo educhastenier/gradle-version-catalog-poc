@@ -1,6 +1,6 @@
 [versions]
 
-groovyVersion = "3.0.10"
+groovyVersion = "3.0.19"
 springVersion = "5.3.27"
 springBootVersion = "2.6.9"
 h2Version = "1.4.199"
